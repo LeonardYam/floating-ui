@@ -97,7 +97,7 @@ function hasFixedPositionAncestor(element: Element, stopNode: Node): boolean {
 // A "clipping ancestor" is an `overflow` element with the characteristic of
 // clipping (or hiding) child elements. This returns all clipping ancestors
 // of the given element up the tree.
-function getClippingElementAncestors(
+export function getClippingElementAncestors(
   element: Element,
   cache: PlatformWithCache['_c']
 ): Array<Element> {
