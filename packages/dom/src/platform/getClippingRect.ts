@@ -99,9 +99,9 @@ function hasFixedPositionAncestor(element: Element, stopNode: Node): boolean {
 // of the given element up the tree.
 export function getClippingElementAncestors(
   element: Element,
-  cache: PlatformWithCache['_c']
+  cache?: PlatformWithCache['_c']
 ): Array<Element> {
-  const cachedResult = cache.get(element);
+  const cachedResult = cache?.get(element);
   if (cachedResult) {
     return cachedResult;
   }
